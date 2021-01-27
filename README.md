@@ -24,4 +24,17 @@ c.mixture
  ```
 
  The atoms amount are converted in ATG/kg as well as physical properties (True|False) as per kg.
+ The rates are defined by .setrates
+ ```
+ c.setrates({"Water":0.5,"Nitrogen":0.25,"Oxygen":0.25})
+ c.mixing()
+ ```
+ .mixing outputs a table of the formulation
+
+ ## Processed formula
+
+ The following processed data are available:
+ * c.formulationtab : a pandas dataframe of the final formulation
+ * c.formulationlist : a pandas dataframe of components
+ * c.formulation : a formulation dictionary
 
