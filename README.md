@@ -31,6 +31,19 @@ c.mixture
  ```
  .mixing outputs a table of the formulation
 
+|    | Component   |   Rate |        H |       O |       N |        Hf | rho          |
+|---:|:------------|-------:|---------:|--------:|--------:|----------:|:-------------|
+|  0 | Water       |   0.5  | 111.017  | 55.508  |  0      | -15866    | 1.0          |
+|  1 | Nitrogen    |   0.25 |   0      |  0      | 71.394  |      0    | 0.01         |
+|  2 | Oxygen      |   0.25 |   0      | 62.502  |  0      |      0    | 0.01         |
+|  3 | Formulation |   1    |  55.5085 | 43.3795 | 17.8485 |  -7932.98 | Non additive |
+
+c.formulationtab produces
+
+ |    | Component   |   Rate |       H |       O |       N |       Hf | rho          |
+ |---:|:------------|-------:|--------:|--------:|--------:|---------:|:-------------|
+ |  0 | Formulation |      1 | 55.5085 | 43.3795 | 17.8485 | -7932.98 | Non additive |'
+
  ## Processed formula
 
  The following processed data are available:
@@ -56,12 +69,6 @@ T=eutec.eutectic()
 eutec.formulationlist
 ```
 
-|    | Component   |   Rate |        H |       O |       N |        Hf | rho          |
-|---:|:------------|-------:|---------:|--------:|--------:|----------:|:-------------|
-|  0 | Water       |   0.5  | 111.017  | 55.508  |  0      | -15866    | 1.0          |
-|  1 | Nitrogen    |   0.25 |   0      |  0      | 71.394  |      0    | 0.01         |
-|  2 | Oxygen      |   0.25 |   0      | 62.502  |  0      |      0    | 0.01         |
-|  3 | Formulation |   1    |  55.5085 | 43.3795 | 17.8485 |  -7932.98 | Non additive |
 
 
 underrelax defines the under relaxation of Newton-Raphson algorithm. Please refere to:
