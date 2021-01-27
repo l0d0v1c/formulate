@@ -54,7 +54,22 @@ c.formulationtab produces
  ## Models
 
  ### Oxygen balance 
- c.oxygenbalance() gives the oxygen balance for C,H,N,O mixtures (https://en.wikipedia.org/wiki/Oxygen_balance)
+ c.oxygenbalance() gives the oxygen balance for C,H,N,O mixtures (https://en.wikipedia.org/wiki/Oxygen_balance). For instance for an energetic mixture:
+ |    | Component   |   Rate |       H |       O |       N |       C |       Hf |
+ |---:|:------------|-------:|--------:|--------:|--------:|--------:|---------:|
+ |  0 | TNT         |   0.75 | 22.014  | 26.416  | 13.208  | 30.819  | -294.983 |
+ |  1 | RDX         |   0.25 | 27.013  | 27.013  | 27.013  | 13.506  |  355.669 |
+ |  2 | Formulation |   1    | 23.2638 | 26.5653 | 16.6593 | 26.4907 | -132.32  |
+
+ ```
+HT=components(physical={'Hf':True})
+HT.add("TNT","C7H5N3O6",{"Hf":-67})
+HT.add("RDX","C3H6N6O6",{"Hf":79})
+HT.setrates({'TNT':0.75,'RDX':0.25})
+HT.mixing()
+HT.oxygenbalance()
+ ```
+should gives -60.88 %
 
  ### Eutectic
 c.eutectic(underrelax=0.01) allow the computation of eutectic points. In this case, raw formula is not required but the physical properties must include Tfus (melting point in K) and Hfus (melting enthalpy in J/mol). For instance to find the eutectic point of LiF/NaF/KF mixture:
@@ -80,6 +95,15 @@ underrelax defines the under relaxation of Newton-Raphson algorithm. Please refe
 Brunet, L., J. Caillard, et P. André. « Thermodynamic calculation of n-component 
 eutectic mixtures ». International Journal of Modern Physics C 15, nᵒ 5 (2004): 675‑87. 
 https://doi.org/10.1142/S0129183104006121.
+
+## Customizing
+
+By default, all the results are displayed with 3 decimals. It can be changed at initialization like
+```
+c=components(physical={"Hf":True,"rho":None,"something":False}, rond=7) 
+
+```
+
 
 
 
