@@ -68,7 +68,12 @@ eutec.mixing()
 T=eutec.eutectic()
 eutec.formulationlist
 ```
-
+|    | Component   |   Rate | Hfus         |   Tfus |
+|---:|:------------|-------:|:-------------|-------:|
+|  0 | KF          |  0.244 | 28500        |   1129 |
+|  1 | LiF         |  0.616 | 10000        |   1118 |
+|  2 | NaF         |  0.14  | 32600        |   1258 |
+|  3 | Formulation |  1     | Non additive |    771 |
 
 
 underrelax defines the under relaxation of Newton-Raphson algorithm. Please refere to:
