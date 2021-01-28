@@ -91,7 +91,7 @@ eutec.formulationlist
 |  3 | Formulation |  1     | Non additive |    771 |
 
 
-underrelax defines the under relaxation of Newton-Raphson algorithm. Please refere to:
+underrelax defines the under relaxation of Newton-Raphson algorithm. Please refer to:
 Brunet, L., J. Caillard, et P. André. « Thermodynamic calculation of n-component 
 eutectic mixtures ». International Journal of Modern Physics C 15, nᵒ 5 (2004): 675‑87. 
 https://doi.org/10.1142/S0129183104006121.
