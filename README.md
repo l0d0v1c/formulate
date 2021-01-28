@@ -100,9 +100,11 @@ eutec.formulationlist
 
 
 underrelax defines the under relaxation of Newton-Raphson algorithm. Please refer to:
+```
 Brunet, L., J. Caillard, et P. André. « Thermodynamic calculation of n-component 
 eutectic mixtures ». International Journal of Modern Physics C 15, nᵒ 5 (2004): 675‑87. 
-https://doi.org/10.1142/S0129183104006121.
+https://doi.org/10.1142/S0129183104006121
+```
 
 ## Customizing
 
@@ -114,7 +116,13 @@ c=components(physical={"Hf":True,"rho":None,"something":False}, rond=7)
 
 ## Running test
 
+A MyBinder instance allows to run this version:
+
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/l0d0v1c/formulate/HEAD?filepath=%2Ftests%2Ftests.ipynb)
+
+## Participate
+
+This is a public version of the library. If you want to join our research project, feel free to contact us at https://www.rd-mediation.fr/wp/contact/
 
 
 ## Cite
