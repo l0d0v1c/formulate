@@ -2,7 +2,7 @@
 
 Formulate is a library to build and manipulate formulations. It can be use for materials, cosmetics or any activities
 involving mixing of components. This version computes oxygen balance and eutectic points.
-The purpose of this library is allowing a way to build deep larning datasets for materials and formulations.
+The purpose of this library is allowing a way to build deep learning datasets for materials and formulations.
 
 ![Alchemist lab](https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Amphitheatrum_sapientiae_aeternae_-_Alchemist%27s_Laboratory.png/471px-Amphitheatrum_sapientiae_aeternae_-_Alchemist%27s_Laboratory.png "Alchemist lab.de Vries")
 
