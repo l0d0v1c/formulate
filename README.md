@@ -2,6 +2,14 @@
 
 Formulate is a library to build and manipulate formulations. It can be use for materials, cosmetics or any activities
 involving mixing of components. This version computes oxygen balance and eutectic points.
+The purpose of this library is allowing a way to build deep larning datasets for materials and formulations.
+
+![Alchemist lab](https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Amphitheatrum_sapientiae_aeternae_-_Alchemist%27s_Laboratory.png/471px-Amphitheatrum_sapientiae_aeternae_-_Alchemist%27s_Laboratory.png "Alchemist lab.de Vries")
+
+## Package install
+```
+pip install https://github.com/l0d0v1c/formulate/blob/main/dist/formulate-1.1-py3-none-any.whl
+```
 
 ## Basic object
 
@@ -104,6 +112,21 @@ c=components(physical={"Hf":True,"rho":None,"something":False}, rond=7)
 
 ```
 
+## Running test
+
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/l0d0v1c/formulate/HEAD?filepath=%2Ftests%2Ftests.ipynb)
 
 
+## Cite
+```
+@misc{Brunet2021,
+  author = {Brunet, L.E.},
+  title = {Formulate: a python library for formulation},
+  year = {2021},
+  publisher = {GitHub},
+  journal = {GitHub repository},
+  howpublished = {\url{https://github.com/l0d0v1c/formulate}},
+  commit = {9d44a5c479f52ba47b4ec5e6c7c59b833daa471d}
+}
+```
 
