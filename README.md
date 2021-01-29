@@ -109,7 +109,9 @@ https://doi.org/10.1142/S0129183104006121
 ## Equilibrium temperature
 c.equilibrium() returns the equilibrium temperature (K) of the mixture for C,H,O,N components and 1 atm. This is an experimental feature based on a simple feedworward neural network trained on 100k equilibrium assessed by free enthalpy minimization. Please refer to
 ```
-Brunet, L., N. Forichon‐Chaumet, J. M. Lombard, et A. Espagnacq. « Modelisation of Combustion Equilibria with Monte-Carlo Numerical Method ». Propellants, Explosives, Pyrotechnics 22, nᵒ 6 (1997): 311‑13. https://doi.org/10.1002/prep.19970220602.
+Brunet, L., N. Forichon‐Chaumet, J. M. Lombard, et A. Espagnacq. « Modelisation of Combustion
+Equilibria with Monte-Carlo Numerical Method ». Propellants, Explosives, Pyrotechnics 22,
+nᵒ 6 (1997): 311‑13. https://doi.org/10.1002/prep.19970220602.
 ```
 
 ## Customizing
