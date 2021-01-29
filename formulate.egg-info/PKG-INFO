@@ -10,6 +10,14 @@ Description: # Formulate
         
         Formulate is a library to build and manipulate formulations. It can be use for materials, cosmetics or any activities
         involving mixing of components. This version computes oxygen balance and eutectic points.
+        The purpose of this library is allowing a way to build deep learning datasets for materials and formulations.
+        
+        ![Alchemist lab](https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Amphitheatrum_sapientiae_aeternae_-_Alchemist%27s_Laboratory.png/471px-Amphitheatrum_sapientiae_aeternae_-_Alchemist%27s_Laboratory.png "Alchemist lab.de Vries")
+        
+        ## Package install
+        ```
+        pip install https://github.com/l0d0v1c/formulate/blob/main/dist/formulate-1.1-py3-none-any.whl
+        ```
         
         ## Basic object
         
@@ -100,9 +108,11 @@ Description: # Formulate
         
         
         underrelax defines the under relaxation of Newton-Raphson algorithm. Please refer to:
+        ```
         Brunet, L., J. Caillard, et P. André. « Thermodynamic calculation of n-component 
         eutectic mixtures ». International Journal of Modern Physics C 15, nᵒ 5 (2004): 675‑87. 
-        https://doi.org/10.1142/S0129183104006121.
+        https://doi.org/10.1142/S0129183104006121
+        ```
         
         ## Customizing
         
@@ -112,8 +122,29 @@ Description: # Formulate
         
         ```
         
+        ## Running test
+        
+        A MyBinder instance allows to run this version:
+        
+        [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/l0d0v1c/formulate/HEAD?filepath=%2Ftests%2Ftests.ipynb)
+        
+        ## Participate
+        
+        This is a public version of the library. If you want to join our research project, feel free to contact us at https://www.rd-mediation.fr/wp/contact/
         
         
+        ## Cite
+        ```
+        @misc{Brunet2021,
+          author = {Brunet, L.E.},
+          title = {Formulate: a python library for formulation},
+          year = {2021},
+          publisher = {GitHub},
+          journal = {GitHub repository},
+          howpublished = {\url{https://github.com/l0d0v1c/formulate}},
+          commit = {9d44a5c479f52ba47b4ec5e6c7c59b833daa471d}
+        }
+        ```
         
         
 Platform: UNKNOWN

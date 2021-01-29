@@ -106,6 +106,9 @@ eutectic mixtures ». International Journal of Modern Physics C 15, nᵒ 5 (200
 https://doi.org/10.1142/S0129183104006121
 ```
 
+## Equilibrium temperature
+c.equilibrium() returns the equilibrium temperature (K) of the mixture for C,H,O,N components and 1 atm. This is an experimental feature based on a simple feedworward neural network trained on 100k equilibrium.
+
 ## Customizing
 
 By default, all the results are displayed with 3 decimals. It can be changed at initialization like
