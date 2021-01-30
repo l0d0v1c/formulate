@@ -6,7 +6,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 setuptools.setup(
     name="formulate", 
     packages=setuptools.find_packages(include=['formulate']),
-    version="1.1",
+    version="1.2",
     author="Luc E.Brunet",
     author_email="luc.brunet@rd-mediation.fr",
     description="Library for formulation",

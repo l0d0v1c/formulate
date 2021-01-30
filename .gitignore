@@ -2,3 +2,4 @@
 .DS_Store
 *.pyc
 tests/.ipynb_checkpoints/tests-checkpoint.ipynb
+setup.py~

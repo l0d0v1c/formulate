@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: formulate
-Version: 1.1
+Version: 1.2
 Summary: Library for formulation
 Home-page: https://www.rd-mediation.fr
 Author: Luc E.Brunet
@@ -9,7 +9,7 @@ License: UNKNOWN
 Description: # Formulate
         
         Formulate is a library to build and manipulate formulations. It can be use for materials, cosmetics or any activities
-        involving mixing of components. This version computes oxygen balance and eutectic points.
+        involving mixing of components. This version computes oxygen balance, eutectic points and equilibrium temperature.
         The purpose of this library is allowing a way to build deep learning datasets for materials and formulations.
         
         ![Alchemist lab](https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Amphitheatrum_sapientiae_aeternae_-_Alchemist%27s_Laboratory.png/471px-Amphitheatrum_sapientiae_aeternae_-_Alchemist%27s_Laboratory.png "Alchemist lab.de Vries")
@@ -112,6 +112,14 @@ Description: # Formulate
         Brunet, L., J. Caillard, et P. André. « Thermodynamic calculation of n-component 
         eutectic mixtures ». International Journal of Modern Physics C 15, nᵒ 5 (2004): 675‑87. 
         https://doi.org/10.1142/S0129183104006121
+        ```
+        
+        ## Equilibrium temperature
+        c.equilibrium() returns the equilibrium temperature (K) of the mixture for C,H,O,N components and 1 atm. This is an experimental feature based on a simple feedworward neural network trained on 100k equilibrium assessed by free enthalpy minimization. Please refer to
+        ```
+        Brunet, L., N. Forichon‐Chaumet, J. M. Lombard, et A. Espagnacq. « Modelisation of Combustion
+        Equilibria with Monte-Carlo Numerical Method ». Propellants, Explosives, Pyrotechnics 22,
+        nᵒ 6 (1997): 311‑13. https://doi.org/10.1002/prep.19970220602.
         ```
         
         ## Customizing
