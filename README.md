@@ -13,7 +13,7 @@ pip install https://github.com/l0d0v1c/formulate/blob/main/dist/formulate-1.2-py
 
 ## Documentation
 
-https://l0d0v1c.github.io/formulate/docs/
+https://l0d0v1c.github.io/formulate/
 
 ## Basic object
 
