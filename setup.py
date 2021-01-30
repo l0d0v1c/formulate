@@ -14,6 +14,7 @@ setuptools.setup(
     long_description_content_type="text/markdown",
     url="https://www.rd-mediation.fr",
     #packages=setuptools.find_packages(),
+    install_requires=['numpy','pybase64','gzip'],
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: Proprieraty",

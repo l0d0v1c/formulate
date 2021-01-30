@@ -8,7 +8,7 @@ The purpose of this library is allowing a way to build deep learning datasets fo
 
 ## Package install
 ```
-pip install https://github.com/l0d0v1c/formulate/blob/main/dist/formulate-1.1-py3-none-any.whl
+pip install https://github.com/l0d0v1c/formulate/blob/main/dist/formulate-1.2-py3-none-any.whl
 ```
 
 ## Basic object
