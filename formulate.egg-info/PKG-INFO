@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: formulate
-Version: 1.2
+Version: 1.3
 Summary: Library for formulation
 Home-page: https://www.rd-mediation.fr
 Author: Luc E.Brunet
@@ -21,7 +21,7 @@ Description: # Formulate
         
         ## Documentation
         
-        https://l0d0v1c.github.io/formulate/docs/
+        https://l0d0v1c.github.io/formulate/
         
         ## Basic object
         
@@ -125,6 +125,15 @@ Description: # Formulate
         Equilibria with Monte-Carlo Numerical Method ». Propellants, Explosives, Pyrotechnics 22,
         nᵒ 6 (1997): 311‑13. https://doi.org/10.1002/prep.19970220602.
         ```
+        
+        ## Enthalpy of formation
+        A neural network trained on AM1/PM3 hamiltonian of MOPAC is implemented to compute a 298K gas enthalpy of formation for organic unknown molecules.
+        Please refer to MOPAC documentation to properly use it.
+        For instance adding a molecule requires also the canonical SMILES representation like
+        ```
+        Mix.add("Ethanol","C2H6O",{'Hf':Mix.enthalpyf("CCO",hamiltonian="AM1")})
+        ```
+        
         
         ## Customizing
         

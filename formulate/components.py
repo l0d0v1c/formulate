@@ -2,6 +2,7 @@ import pandas as pd
 import re
 import numpy as np
 import pickle,base64,sys,io,gzip
+import pysmiles
 
 class components():
     def __init__(self,physical={'Hf':True},rond=3):
@@ -851,6 +852,44 @@ class components():
       eq= (lambda x,b: ((b[0]+b[1])/2-b[0])*x+(b[0]+b[1])/2)((lambda X:np.dot((lambda X:(lambda x: 1. / (1 + np.exp(-x)))(np.dot(X, iw)+biases))([X[j] for j in ['C',"H","O","N","Hf"]]),ow))((lambda mixture,b: {at:(lambda x,b:(x-(b[0]+b[1])/2)/((b[0]+b[1])/2-b[0]))(v,b[at]) for at,v in mixt.items()})(mixt,boundaries)),boundaries['Tf'])
       return round(eq,0)
 
+
+    def enthalpyf(self,smiles,hamiltonian="PM3"):
+      """
+          Enthalpy of formation at 298K gas phase by hamiltoniam PM3 and AM1 (Mopac) in kJ/mol for
+          C,H,O,N molecules
+          param:smiles: Canonical smiles molecule encoding
+          param:hamiltonian: PM3 or AM1
+
+      """
+      if len(self.allatoms-set(['C','H','O','N']))>0:
+        raise Exception("Only valid for CHON molecules")
+
+      npm3='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'
+      nam1='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'
+      modele=pickle.load(io.BytesIO(gzip.decompress(base64.b64decode(npm3.encode() if hamiltonian=="PM3" else nam1.encode()))))
+      iw,ow,biases=modele[4],modele[5],modele[6]
+      mol_with_H = pysmiles.read_smiles(smiles, explicit_hydrogen=True)
+      v=[0 for _ in range(len(modele[2])-1)]
+      for c in mol_with_H.nodes(data='element'):
+          v[list(modele[2]).index(c[1])]+=1
+      for symb in modele[2][4:-1]:
+          v[list(modele[2]).index(symb)]=smiles.count(symb)
+      
+      my_dict = {k: v for k, v in modele[0].items() }
+      boundaries={i:[j[1],j[2]] for i,j in my_dict.items()} 
+      #print(boundaries)
+      #print(v)
+      recode=lambda x,b:(x-(b[0]+b[1])/2)/((b[0]+b[1])/2-b[0])
+      for i in range(0,len(v)):
+          v[i]=recode(v[i],boundaries[modele[2][i]])
+      #print(v)
+      predict=lambda X:np.dot((lambda X:(lambda x: 1. / (1 + np.exp(-x)))(np.dot(X, iw)+biases))(X),ow)
+      hr=predict(v)
+      #print(hr)
+      decode=lambda x,b: ((b[0]+b[1])/2-b[0])*x+(b[0]+b[1])/2
+      
+      
+      return decode(hr,boundaries["Hf%s" % hamiltonian])*4.18/1000
 
 
         

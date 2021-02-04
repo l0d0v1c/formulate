@@ -118,6 +118,15 @@ Equilibria with Monte-Carlo Numerical Method ». Propellants, Explosives, Pyrot
 nᵒ 6 (1997): 311‑13. https://doi.org/10.1002/prep.19970220602.
 ```
 
+## Enthalpy of formation
+A neural network trained on AM1/PM3 hamiltonian of MOPAC is implemented to compute a 298K gas enthalpy of formation for organic unknown molecules.
+Please refer to MOPAC documentation to properly use it.
+For instance adding a molecule requires also the canonical SMILES representation like
+```
+Mix.add("Ethanol","C2H6O",{'Hf':Mix.enthalpyf("CCO",hamiltonian="AM1")})
+```
+
+
 ## Customizing
 
 By default, all the results are displayed with 3 decimals. It can be changed at initialization like

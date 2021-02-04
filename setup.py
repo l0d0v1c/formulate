@@ -6,7 +6,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 setuptools.setup(
     name="formulate", 
     packages=setuptools.find_packages(include=['formulate']),
-    version="1.2",
+    version="1.3",
     author="Luc E.Brunet",
     author_email="luc.brunet@rd-mediation.fr",
     description="Library for formulation",
@@ -14,7 +14,7 @@ setuptools.setup(
     long_description_content_type="text/markdown",
     url="https://www.rd-mediation.fr",
     #packages=setuptools.find_packages(),
-    install_requires=['numpy','pybase64'],
+    install_requires=['numpy','pybase64','pysmiles'],
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: Proprieraty",

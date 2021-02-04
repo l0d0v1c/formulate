@@ -3,4 +3,5 @@ pandas
 pybase64
 gzip
 pickle
+pysmiles
 
