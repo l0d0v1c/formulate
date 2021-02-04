@@ -127,7 +127,7 @@ Mix.add("Ethanol","C2H6O",{'Hf':Mix.enthalpyf("CCO",hamiltonian="AM1")})
 ```
 Despite of a quite good and very quick prediction of the full quantum mechanics code, this version using only a two layers neural networks there is still a relative unaccuracy.
 
-![PM3 prediction](imgs/pm3.png "PM3 prediction")
+![PM3 prediction](imgs/resPM3.png "PM3 prediction and distribution of absolute gap")
 
 rem:a more accurate version is a part of AlchemAI @ https://www.alysophil.com
 
