@@ -16,7 +16,7 @@ Description: # Formulate
         
         ## Package install
         ```
-        pip install https://github.com/l0d0v1c/formulate/blob/main/dist/formulate-1.2-py3-none-any.whl
+        pip install https://github.com/l0d0v1c/formulate/blob/main/dist/formulate-1.3-py3-none-any.whl
         ```
         
         ## Documentation
@@ -133,7 +133,7 @@ Description: # Formulate
         ```
         Mix.add("Ethanol","C2H6O",{'Hf':Mix.enthalpyf("CCO",hamiltonian="AM1")})
         ```
-        
+        rem:a more accurate version is a part of AlchemAI @ https://www.alysophil.com
         
         ## Customizing
         
