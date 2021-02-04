@@ -1,6 +1,5 @@
 numpy
 pandas
 pybase64
-pickle
 pysmiles
 
