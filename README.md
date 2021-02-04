@@ -125,7 +125,7 @@ For instance adding a molecule requires also the canonical SMILES representation
 ```
 Mix.add("Ethanol","C2H6O",{'Hf':Mix.enthalpyf("CCO",hamiltonian="AM1")})
 ```
-
+rem:a more accurate version is a part of AlchemAI @ https://www.alysophil.com
 
 ## Customizing
 
