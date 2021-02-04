@@ -162,6 +162,7 @@ This is a public version of the library. If you want to join our research projec
   author = {Brunet, L.E.},
   title = {Formulate: a python library for formulation},
   year = {2021},
+  doi ={10.13140/RG.2.2.17045.24805}
   publisher = {GitHub},
   journal = {GitHub repository},
   howpublished = {\url{https://github.com/l0d0v1c/formulate}},
