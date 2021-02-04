@@ -1,7 +1,7 @@
 # Formulate
 
 Formulate is a library to build and manipulate formulations. It can be use for materials, cosmetics or any activities
-involving mixing of components. This version computes oxygen balance, eutectic points and equilibrium temperature.
+involving mixing of components. This version computes oxygen balance, eutectic points, equilibrium temperature by deep learning.
 The purpose of this library is allowing a way to build deep learning datasets for materials and formulations.
 
 ![Alchemist lab](https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Amphitheatrum_sapientiae_aeternae_-_Alchemist%27s_Laboratory.png/471px-Amphitheatrum_sapientiae_aeternae_-_Alchemist%27s_Laboratory.png "Alchemist lab.de Vries")
@@ -125,11 +125,17 @@ For instance adding a molecule requires also the canonical SMILES representation
 ```
 Mix.add("Ethanol","C2H6O",{'Hf':Mix.enthalpyf("CCO",hamiltonian="AM1")})
 ```
-Despite of a quite good and very quick prediction of the full quantum mechanics code, this version using only a two layers neural networks there is still a relative unaccuracy.
+Despite of a quite good and very quick prediction of the full quantum mechanics code outputs, this version using only a two layers neural networks there is still a relative unaccuracy.
 
 ![PM3 prediction](imgs/resPM3.png "PM3 prediction and distribution of absolute gap")
+Fig1: PM3 prediction and distribution of absolute gap
 
-rem:a more accurate version is a part of AlchemAI @ https://www.alysophil.com
+*rem:a more accurate version is a part of AlchemAI @ https://www.alysophil.com*
+
+```
+Computational Chemistry, David Young, Wiley-Interscience, 2001. Appendix A. A.3.2 pg 342, MOPAC
+```
+
 
 ## Customizing
 
